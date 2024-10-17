@@ -28,6 +28,10 @@ in_url "/"
 
 in_url "./"
 
+in_url "..//"
+
+in_url "%2E%2F./"
+
 in_url "%20"
 
 in_url "%09"
@@ -61,17 +65,25 @@ in_header "X-Custom-IP-Authorization: 127.0.0.1"
 
 in_header "X-Remote-Addr: 127.0.0.1"
 
+in_header "X-Remote-Addr: 2130706433"
+
 in_header "Proxy-Host: 127.0.0.1"
 
 in_header "X-Forwarded-For: http://127.0.0.1"
 
 in_header "X-Forwarded-For: 127.0.0.1:80"
 
+in_header "X-Forwarded-For: 2130706433"
+
 in_header "X-Forwarded-Host: 127.0.0.1"
+
+in_header "X-Originally-Forwarded-For: localhost"
 
 in_header "Client-IP: 127.0.0.1"
 
 in_header "Real-Ip: 127.0.0.1"
+
+in_header "Real-Ip: 2130706433"
 
 in_header "Host: 127.0.0.1"
 
@@ -82,6 +94,8 @@ in_header "X-True-IP: 127.0.0.1"
 in_header "X-ProxyUser-Ip: 127.0.0.1"
 
 in_header "X-Real-IP: 127.0.0.1"
+
+in_header "X-Originating-IP: 127.0.0.1"
 
 # Misc
 P="TRACE"
