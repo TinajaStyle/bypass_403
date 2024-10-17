@@ -107,5 +107,5 @@ curl -k -s -o /dev/null -iL -w "%{http_code}","%{size_download}" -H "$P" -X POST
 echo "  --> $target -H $P -X POST"
 
 echo "Way back machine:"
-curl -s  https://archive.org/wayback/available?url=$target | jq -r '.archived_snapshots.closest | {available, url}'
+curl -s  https://archive.org/wayback/available?url=$target | jq -r '.archived_snapshots.closest | {available, url}' 2>/dev/null
 
